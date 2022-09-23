@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/ezfix">
+
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ezfix_logo"
+        android:id="@+id/ezfixlogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+
+        />
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="Log in to continue."
+        android:textSize="20sp"
+        android:layout_below="@+id/ezfixlogo"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/head"
+        android:text="USERNAME"
+        android:textSize="16sp"
+        android:gravity="left"
+        android:layout_marginLeft="45dp"
+
+        android:textColor="@color/white"/>
+
+
+    <EditText
+        android:id="@+id/usernameEditext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="45dp"
+        android:layout_below="@id/username"
+        android:background="@drawable/edit_background"
+        android:hint="Username"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/passlabel"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="PASSWORD"
+        android:textSize="16sp"
+        android:gravity="left"
+        android:layout_below="@id/usernameEditext"
+        android:layout_marginLeft="45dp"
+
+        android:textColor="@color/white"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        app:passwordToggleEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/passlabel">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginLeft="45dp"
+
+            android:layout_marginRight="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_background"
+            android:hint="Password"/>
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/red"
+        android:text="Log in"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Forgot Password?"
+        android:textSize="16sp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/btn_login"
+        android:textColor="@color/white"
+        android:layout_marginLeft="45dp"/>
+
+    <TextView
+        android:id="@+id/clickhere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:text="Click Here."
+        android:textSize="16sp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/forgot"
+        android:textColor="@color/white"
+        android:clickable="true"
+        android:layout_marginLeft="45dp" />
+
+    <TextView
+        android:id="@+id/have"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Dont have an account?"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/clickhere"
+        android:layout_marginLeft="45dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:text="Register"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/have"
+        android:clickable="true"
+        android:textColor="@color/red"
+        android:layout_marginLeft="45dp"/>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

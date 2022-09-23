@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ezfix_logo2"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SearchView
+            android:id="@+id/simpleSearchView"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/searchview_bg"
+
+            />
+
+        <TextView
+            android:id="@+id/head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            android:textSize="40dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/simpleSearchView"
+            android:layout_gravity="right"/>
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/head"
+            android:layout_margin="20dp"
+            android:id="@+id/slider"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewmore"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/slider"
+            android:text="VIEW MORE"
+            android:textColor="@color/red"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"
+            />
+
+
+        <RelativeLayout
+            android:layout_below="@id/viewmore"
+            android:layout_width="125dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/container"
+            android:layout_margin="10dp"
+            android:id="@+id/container">
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/home_service"/>
+            <TextView
+                android:layout_below="@id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="HOME SERVICE"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@id/viewmore"
+            android:layout_width="125dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/container"
+            >
+
+            <ImageView
+                android:id="@+id/mobile2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/mobile2"/>
+            <TextView
+                android:layout_below="@id/mobile2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="MOBILE REPAIR"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@id/viewmore"
+            android:layout_width="125dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/container"
+            >
+
+            <ImageView
+                android:id="@+id/appliance"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/app"/>
+            <TextView
+                android:layout_below="@id/appliance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="APPLIANCE"/>
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vienearby"
+            android:layout_below="@id/container"
+            android:text="VIEW NEARBY SERVICES"
+            android:textColor="@color/red"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            />
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:src="@drawable/map"
+            android:layout_below="@id/vienearby"
+            android:clickable="true"
+            android:layout_marginTop="10dp"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</FrameLayout>
